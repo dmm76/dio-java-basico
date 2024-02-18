@@ -1,3 +1,4 @@
+package edu.douglas.primeirasemana;
 public class MinhaClasse {
     public static void main(String[] args) {
         String primeiroNome = "Douglas Marcelo";
