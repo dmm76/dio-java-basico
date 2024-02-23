@@ -10,19 +10,26 @@ public class ResultadoEscolar {
         int numeroNotas = 0;
         double notaAluno = 0.0;
         double somaNotas = 0.0;
+
         System.out.println("Digite o numero de provas do Aluno: ");
         numeroNotas = scanner.nextInt();
+
         for(int i = 1; i <= numeroNotas; i++){
             System.out.println("Digite a nota " + i + " da prova do Aluno: ");
-            notaAluno = scanner.nextInt();
+            notaAluno = scanner.nextDouble();
             somaNotas = somaNotas + notaAluno;
         }
         double mediaFinal = somaNotas / numeroNotas;
+        
 
         if (mediaFinal >= 7) {
             System.out.println("Média: "+ mediaFinal + " Aprovado");
-        }else
-        System.out.println("Média: "+ mediaFinal + " Recuperação");
+        }
+        if (mediaFinal >=5 && mediaFinal < 7) {
+            System.out.println("Média: "+ mediaFinal + " Recuperação");  
+        }
+        else
+        System.out.println("Média: "+ mediaFinal + " Reprovado");
         
     }
 }

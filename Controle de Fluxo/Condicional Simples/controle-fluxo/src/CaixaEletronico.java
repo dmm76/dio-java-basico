@@ -14,7 +14,9 @@ public class CaixaEletronico {
 
         if (valorsolicitado<saldo) {
             saldo = saldo - valorsolicitado;
-        }
-        System.out.println("Seu saldo é de: R$ "+ saldo + " reais.");
+            System.out.println("Seu saldo é de: R$ "+ saldo + " reais.");
+        }else
+            System.out.println("Saldo insuficiente");
+        
     }
 }
