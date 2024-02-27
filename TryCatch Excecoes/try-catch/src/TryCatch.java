@@ -3,6 +3,9 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class TryCatch {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
      try{
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
@@ -22,9 +25,11 @@ public class TryCatch {
         System.out.println("Meu nome é " + nome.toUpperCase() + " " + sobrenome.toUpperCase()+ ".");
         System.out.println("Minha idade é: " + idade + " anos.");
         System.out.println("Minha altura é: " + altura + " cm.");
+        scanner.close(); //primeira vez utilizando o metodo close 
         }
         catch(InputMismatchException e){
             System.err.println("Os campos idade e altura precisam ser numéricos");
         }
     }
+
 }
