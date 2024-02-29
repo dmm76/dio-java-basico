@@ -11,7 +11,7 @@ public class ExemploExcecao {
             //Erro Exception
             System.out.println(valor);
             } catch (ParseException e) {
-                e.printStackTrace();
+                //e.printStackTrace();
                 System.out.println("Nao pode haver caracteres alfanumericos");
             }
     }
