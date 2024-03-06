@@ -1,0 +1,13 @@
+package projeto.poo;
+
+public class Carro {
+	public void ligar() {
+		System.out.println("Carro Ligado");
+	}
+	public void confereCombustivel() {
+		System.out.println("Conferindo Combustivel");
+	}
+	public void confereCambio(){
+		System.out.println("Cambio em P");
+	}
+}

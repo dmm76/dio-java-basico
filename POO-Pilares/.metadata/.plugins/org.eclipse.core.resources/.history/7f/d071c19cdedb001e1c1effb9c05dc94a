@@ -1,0 +1,7 @@
+package projeto.poo;
+
+public class Carro {
+	public void ligarCarro() {
+		System.out.println("Carro Ligado");
+	}
+}
